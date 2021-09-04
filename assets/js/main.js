@@ -96,6 +96,7 @@ jQuery(document).ready(function($) {
             $('.resp-tabs-container').removeClass('animated ' + animation_style);
         });
 
+        $(".content_2").css("height", "100%");
         $(".content_2").mCustomScrollbar("destroy");
         $(".content_2").mCustomScrollbar({
             theme: "dark-2",
@@ -134,7 +135,7 @@ jQuery(document).ready(function($) {
             else {
                 $(".resp-tabs-container").css("width", (0.75*window.innerWidth)-150);
             }
-            $(".resp-vtabs .resp-tabs-container").css("height", "580px");
+            // $(".resp-vtabs .resp-tabs-container").css("height", "580px");
             $(".resp-vtabs .resp-tabs-container").css("height", window.innerHeight);
             $(".resp-vtabs").css("height", "100%");
             $(".resp-tabs-container").css("height", window.innerHeight);
