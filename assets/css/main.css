@@ -334,7 +334,7 @@ h2.resp-accordion:first-child {
     .resp-vtabs .resp-tabs-container {
         border: none;
         float: none;
-        width: 100%;
+        width: 100% !important;
         min-height: initial;
         clear: none;
     }
@@ -1113,7 +1113,7 @@ ul.about {
     }
 }
 
-@media only screen  and (max-width: 766px) {
+@media only screen  and (max-width: 800px) {
     .widget-profil{
         height: 285px !important;
         margin-bottom: 20px;
@@ -1136,7 +1136,7 @@ ul.about {
     }
 }
 
-@media only screen and (min-width : 766px) and (max-width: 800px) {
+/* @media only screen and (min-width : 766px) and (max-width: 800px) {
     .widget-profil{
         height: 210px !important;
         margin-bottom: 20px;
@@ -1145,7 +1145,7 @@ ul.about {
     #profile_social {
         display: none;
     }
-}
+} */
 
 @media only screen and (min-width : 550px) and (max-width : 991px) {
     #profile .cycle-slideshow {
