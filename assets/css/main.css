@@ -943,6 +943,7 @@ ul.about {
 
 .widget-profil{
     /* height: 580px; */
+    height: 100%;
     float: right;
 }
 .widget-profil .circle {
