@@ -1,13 +1,13 @@
 
 title: My Resume
-url: 'http://junlulocky.com'
-baseurl: '/PanelCV' #change it according to your repository name
+url: 'http://arvind.seshan.org'
+baseurl: '' #change it according to your repository name
 
 
 
 # Profile information
 yourname: Arvind Seshan  ## put your name
-title: 'STUDENT'  ## your title
+title: 'Student'  ## your title
 location: Pittsburgh , PA
 
 
