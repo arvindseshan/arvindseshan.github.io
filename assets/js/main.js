@@ -130,8 +130,11 @@ jQuery(document).ready(function($) {
         } else {
 
             // $(".resp-vtabs .resp-tabs-container").css("height", "580px");
-            $(".resp-vtabs .resp-tabs-container").css("height", "100%");
+            // $(".resp-vtabs .resp-tabs-container").css("height", "window.innerHeight);
+            $(".resp-vtabs").css("height", "100%");
+            $(".resp-tabs-container").css("height", window.innerHeight);
             // $(".content_2").css("height", "580px");
+            $(".widget-profil").css("height", window.innerHeight);
             $(".content_2").css("height", "100%");
             $(".content_2").mCustomScrollbar("destroy");
             $(".content_2").mCustomScrollbar({
