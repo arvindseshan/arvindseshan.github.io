@@ -1,0 +1,24 @@
+
+title: My Resume
+url: 'http://junlulocky.com'
+baseurl: '/PanelCV' #change it according to your repository name
+
+
+
+# Profile information
+yourname: Arvind Seshan  ## put your name
+title: 'STUDENT'  ## your title
+location: Pittsburgh , PA
+
+
+## Social Profiles
+facebook: https://www.facebook.com/arvindseshan04 ## your facebook account url
+twitter: https://twitter.com/SeshanBrothers ## your twitter account url
+linkedin: http://www.linkedin.com  ## your linkedin account url
+website: http://www.primelessons.org
+youtube: https://www.youtube.com/c/SeshanBrothers
+github: https://github.com/arvindseshan
+
+
+
+# Update all the sections by editing the files inside _includes folder.
