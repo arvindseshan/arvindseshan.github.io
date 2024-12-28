@@ -34,7 +34,7 @@ Right before I left for MIT, I built this Firefly robot as an interactive pet. T
     </div>
 </div>
 
-Connect 4 allows a players to play against a SPIKE Prime robot. LEGO Education featured this robot in all its social media channels. The SPIKE Prime, which was coded using Python, keeps track of all moves and optimizes its move each round. 
+Connect 4 allows a player to play against a SPIKE Prime robot. LEGO Education featured this robot in all its social media channels. The SPIKE Prime, which was coded using Python, keeps track of all moves and optimizes its move each round. 
 
 Another SPIKE Prime robot that I created in collaboration with Sanjay featured a SPIKE Prime robot that prints images. Images get converted to a bitmap on a computer. The Python program on the SPIKE Prime reads the bitmap and prints it out. The printhead moves to the appropriate pixel and draws a dot.
 
