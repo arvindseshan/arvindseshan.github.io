@@ -5,7 +5,7 @@ date: 2024-12-17 11:40:00
 description: For the last seven years, I have been creating and sharing interactive LEGO robotics models. Many of these robots have been featured on LEGO and LEGO Education social media sites, and LEGO events such as LEGOWORLD Copenhagen.
 tags: robotics
 categories:
-thumbnail: assets/img/firefly.jpg
+thumbnail: assets/img/firefly.JPG
 images:
   venobox: true
 ---
@@ -52,8 +52,8 @@ You can see many other projects on my [YouTube Channel <i class="fa-brands fa-yo
 
 
 <div class="social">
-<a class="venobox" data-gall="myGallery2" href="../../../assets/img/firefly.jpg"><img height="300px" style=" border-radius: 5%;vertical-align:middle;margin:2px 2px" src="../../../assets/img/firefly.jpg" /></a>
-<a class="venobox" data-gall="myGallery2" href="../../../assets/img/rps.jpg"><img height="300px" style=" border-radius: 5%;vertical-align:middle;margin:2px 2px" src="../../../assets/img/rps.jpg" /></a>
-<a class="venobox" data-gall="myGallery2" href="../../../assets/img/connect.jpg"><img height="300px" style=" border-radius: 5%;vertical-align:middle;margin:2px 2px" src="../../../assets/img/connect.jpg" /></a>
-<a class="venobox" data-gall="myGallery2" href="../../../assets/img/tictactoe.jpg"><img height="300px" style=" border-radius: 5%;vertical-align:middle;margin:2px 2px" src="../../../assets/img/tictactoe.jpg" /></a>
+<a class="venobox" data-gall="myGallery2" href="../../../assets/img/firefly.JPG"><img height="300px" style=" border-radius: 5%;vertical-align:middle;margin:2px 2px" src="../../../assets/img/firefly.JPG" /></a>
+<a class="venobox" data-gall="myGallery2" href="../../../assets/img/rps.JPG"><img height="300px" style=" border-radius: 5%;vertical-align:middle;margin:2px 2px" src="../../../assets/img/rps.JPG" /></a>
+<a class="venobox" data-gall="myGallery2" href="../../../assets/img/connect.JPG"><img height="300px" style=" border-radius: 5%;vertical-align:middle;margin:2px 2px" src="../../../assets/img/connect.JPG" /></a>
+<a class="venobox" data-gall="myGallery2" href="../../../assets/img/tictactoe.JPG"><img height="300px" style=" border-radius: 5%;vertical-align:middle;margin:2px 2px" src="../../../assets/img/tictactoe.JPG" /></a>
 </div>
