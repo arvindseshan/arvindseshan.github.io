@@ -26,7 +26,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
 
 I am an undergraduate at the **Massachusetts Institute of Technology** pursuing a Bachelor of Science degree in **Computer Science and Engineering (Course 6-3)**.
 
-I am passionate about developing new cutting-edge tools and techniques for computer scientists. I am also excited to use computational approaches to solve complex problems in other domains. I am especially interested in the intersection of **computer vision**, **computational photography**, and **machine learning**. 
+I am passionate about developing new cutting-edge tools and techniques for computer scientists. I am also excited to use computational approaches to solve complex problems in other domains. I am especially interested in the intersection of **computer vision**, **computational photography**, **graphics**, and **machine learning**. 
 
 I have spent over 12 years doing robotics, including competing in FIRST Robotics. In addition to competing, I have volunteered as judge, referee, and tournament director. I continue to mentor middle school robotics teams and run three major educational websites designed to teach others programming and mechanical skills through LEGO robotics.
 
