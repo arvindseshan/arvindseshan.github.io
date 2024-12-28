@@ -1,9 +1,7 @@
 <figure>
-{% assign seen = "" %}
 {% for image in site.static_files %}
     {% if image.path contains 'assets/img/gallery' %}
-          {% unless seen contains image.path %}
-            {% assign seen = seen | append: image.path %}
+          {% unless image.path contain '.webp' %}
             <a class="venobox" data-fitview="true" data-gall="myGallery" href="{{ site.baseurl }}{{ image.path }}"><img height="200px" style="border:0px solid black; border-radius: 5%; vertical-align:middle;margin:5px 5px" src="{{ site.baseurl }}{{ image.path }}" /></a>
           {% endunless %}
     {% endif %}
