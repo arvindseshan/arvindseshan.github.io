@@ -60,7 +60,7 @@ ninja.data = [{
       
         title: "RISC-V Processor Optimized for Neural Network Inference",
       
-      description: "Built CPU with 4-stage pipeline, bypassing, and custom instruction set extensions for inference. Implemented loop unrolling, and function inlining code optimizations.",
+      description: "Built CPU with 4-stage pipeline, bypassing, and custom instruction set extensions for inference. Implemented loop unrolling and function inlining code optimizations.",
       section: "Projects",
       handler: () => {
         
