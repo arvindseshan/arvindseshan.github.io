@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photos/";
           },
-        },{id: "post-image-inpainting",
+        },{id: "post-ai-powered-cv-analyzer",
+      
+        title: "AI-Powered CV Analyzer",
+      
+      description: "Designed an AI-powered platform using Gemini that compares résumés to job descriptions to provide a match score and feedback with a backend in Python and frontend in HTML and CSS.",
+      section: "Projects",
+      handler: () => {
+        
+          window.location.href = "/projects/cvai/";
+        
+      },
+    },{id: "post-image-inpainting",
       
         title: "Image Inpainting",
       
