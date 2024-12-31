@@ -27,7 +27,7 @@ ninja.data = [{
       
         title: "AI-Powered CV Analyzer",
       
-      description: "Designed an AI-powered platform using Gemini that compares résumés to job descriptions to provide a match score and feedback with a backend in Python and frontend in HTML and CSS.",
+      description: "Designed an AI-powered platform using Flask and Gemini that compares résumés to job descriptions to provide a match score and feedback with a backend in Python and frontend in HTML and CSS.",
       section: "Projects",
       handler: () => {
         
