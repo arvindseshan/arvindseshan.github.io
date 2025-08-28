@@ -23,7 +23,29 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photos/";
           },
-        },{id: "post-ai-powered-cv-analyzer",
+        },{id: "post-star-battle-puzzle-game",
+      
+        title: "Star Battle Puzzle Game",
+      
+      description: "For the final project in MIT’s Software Construction class, I worked in a group of three to implement a puzzle game in TypeScript. I leveraged software engineering techniques such as writing design specifications, performing code reviews, and building unit tests &amp; CI/CD pipelines to ensure safe, maintainable, and reliable software for a client–server system.",
+      section: "Projects",
+      handler: () => {
+        
+          window.location.href = "/projects/puzzle/";
+        
+      },
+    },{id: "post-plug-and-play-self-supervised-temporal-consistency-refinement-for-monocular-depth-estimation-in-video",
+      
+        title: "Plug-and-Play Self-Supervised Temporal Consistency Refinement for Monocular Depth Estimation in Video",
+      
+      description: "For the final project in MIT’s Introduction to Computer Vision class, I worked on a lightweight self-supervised refinement model with PyTorch that improves monocular video depth estimation by enforcing temporal and visual consistency across frames. Our plug-in approach enhances single-image depth predictions with smooth, stable results while remaining more efficient than bulky state-of-the-art methods.",
+      section: "Projects",
+      handler: () => {
+        
+          window.location.href = "/projects/cv/";
+        
+      },
+    },{id: "post-ai-powered-cv-analyzer",
       
         title: "AI-Powered CV Analyzer",
       
