@@ -265,7 +265,7 @@ jekyll-archives:
     tag: "/projects/tag/:name/"
     category: "/projects/category/:name/"
 
-display_tags: ["C/C++", "Python", "Java", "systems", "visual-computing", "machine-learning", "robotics"] # these tags will be displayed on the front page of your blog
+display_tags: ["C/C++", "Python", "Java", "JavaScript/TypeScript", "systems", "visual-computing", "machine-learning", "robotics"] # these tags will be displayed on the front page of your blog
 display_categories: ["class-projects", "papers", "web-apps"] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
