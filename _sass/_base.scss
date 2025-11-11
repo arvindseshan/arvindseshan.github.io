@@ -589,38 +589,187 @@ footer.sticky-bottom {
   padding: 0;
 
   li {
-    border-bottom: 1px solid var(--global-divider-color);
     list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem; /* inner padding for breathing room */
+    margin-bottom: 1.25rem;
 
-    .post-meta {
-      color: var(--global-text-color-light);
-      font-size: 0.875rem;
-      margin-bottom: 0;
+    /* --- visual border & card behavior --- */
+    border: 1px solid var(--global-divider-color);
+    border-radius: 10px;
+    background: var(--global-card-bg, var(--global-bg-color));
+    transition:
+      transform .25s ease,
+      box-shadow .25s ease,
+      background-color .25s ease,
+      border-color .25s ease;
+    transform: translateZ(0);
+    will-change: transform;
+    overflow: hidden; /* clip zoomed image */
+    position: relative;
+    cursor: pointer;
+
+    /* full-card overlay anchor */
+    .card-link-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      outline: none;
     }
 
+    /* raise inner elements above overlay */
+    .inner-link,
+    .post-title,
+    .post-meta,
+    .post-tags { position: relative; z-index: 2; }
+
+    /* hover lift & shadow */
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        transform: translateY(-4px) scale(1.02);
+        box-shadow: 0 6px 20px rgba(0,0,0,.12);
+        border-color: transparent; /* removes border edge on lift */
+        background: var(--global-bg-color);
+      }
+      &:hover .post-title { color: var(--global-theme-color); }
+    }
+
+    /* keyboard focus */
+    &:focus-within {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 6px 20px rgba(0,0,0,.12);
+      border-color: transparent;
+      background: var(--global-bg-color);
+    }
+    .card-link-overlay:focus-visible {
+      outline: 2px solid var(--global-theme-color);
+      outline-offset: 2px;
+    }
+
+    /* click feedback */
+    .card-link-overlay:active {
+      transform: scale(.99);
+    }
+
+    /* thumbnail image */
+    .card-img {
+      width: 100%;
+      transition: transform .4s ease;
+      display: block;
+      border-radius: 6px;
+      object-fit: cover;
+      margin-top: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      &:hover .card-img { transform: scale(1.05); }
+    }
+
+    /* text styles */
+    .post-meta,
     .post-tags {
       color: var(--global-text-color-light);
       font-size: 0.875rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0;
+      margin-top: 0.5rem;
     }
 
     a {
       color: var(--global-text-color);
       text-decoration: none;
-
-      &:hover {
-        color: var(--global-theme-color);
-      }
+      &:hover { color: var(--global-theme-color); }
     }
 
     mjx-container[jax="CHTML"][display="true"] {
       display: unset;
     }
   }
+
+  /* accessibility: respect reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    li, li .card-img { transition: none; }
+    .card-link-overlay:active { transform: none; }
+  }
 }
+
+/* ============================
+   Pretty Photo Grid (no JS)
+   ============================ */
+
+.pretty-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.pg-item {
+  position: relative;
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background: var(--global-card-bg, var(--global-bg-color));
+  box-shadow: 0 1px 6px rgba(0,0,0,.06);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .pg-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,.16);
+  }
+}
+
+.pg-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  aspect-ratio: 4 / 3;         /* neat, consistent tiles */
+  object-fit: cover;           /* smart crop */
+  transition: transform .5s ease, filter .35s ease, opacity .35s ease;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .pg-item:hover .pg-img {
+    transform: scale(1.04);
+    filter: saturate(1.05);
+  }
+}
+
+/* Caption pill */
+.pg-caption {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  padding: .35rem .6rem;
+  border-radius: 999px;
+  font-size: .85rem;
+  line-height: 1;
+  color: #fff;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(2px);
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity .25s ease, transform .25s ease;
+  pointer-events: none;
+}
+
+@media (hover:hover) and (pointer:fine) {
+  .pg-item:hover .pg-caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .pg-item, .pg-img, .pg-caption { transition: none !important; }
+}
+
+
 
 .pagination {
   .page-item {
@@ -652,6 +801,54 @@ footer.sticky-bottom {
     text-decoration: none;
   }
 }
+
+/* ============================
+   Animated gradient name/header
+   ============================ */
+
+.gradient-name {
+  font-weight: 700;
+  background: linear-gradient(
+    90deg,
+    #b509ac,
+    #3d00af 50%,
+    #2698ba 100%
+  );
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientShift 8s ease infinite;
+}
+
+/* Moving gradient animation */
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Full-bleed gradient mesh canvas */
+#bg-mesh {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  pointer-events: none; /* never block the mouse */
+}
+
+@media (hover: none), (pointer: coarse), (prefers-reduced-motion: reduce) {
+  #bg-mesh { display: none; }
+}
+
+// #bg-overlay {
+//   position: fixed;
+//   inset: 0;
+//   z-index: -1;               /* still behind content */
+//   background: rgba(255, 255, 255, 0.3); /* milky white veil */
+//   backdrop-filter: blur(1px); /* softens motion even more */
+//   pointer-events: none;
+// }
+
 
 // Projects
 

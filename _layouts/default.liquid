@@ -17,6 +17,7 @@
 
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
+    <canvas id="bg-mesh" aria-hidden="true"></canvas>
     <!-- Header -->
     {% include header.liquid %}
 
@@ -52,5 +53,6 @@
 
     <!-- JavaScripts -->
     {% include scripts.liquid %}
+    <script src="{{ '/assets/js/custom.js' | relative_url }}" defer></script>
   </body>
 </html>
