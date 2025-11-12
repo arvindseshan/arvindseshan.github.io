@@ -612,18 +612,20 @@ footer.sticky-bottom {
     .card-link-overlay {
       position: absolute;
       inset: 0;
-      z-index: 1;
+      z-index: 2; /* on top of regular content */
       display: block;
       text-decoration: none;
       color: inherit;
       outline: none;
     }
 
-    /* raise inner elements above overlay */
-    .inner-link,
+    /* regular content should NOT be above the overlay */
     .post-title,
     .post-meta,
-    .post-tags { position: relative; z-index: 2; }
+    .post-tags { position: static; z-index: auto; }
+
+    /* but allow inline links to sit above so they remain individually clickable */
+    .inner-link { position: relative; z-index: 3; }
 
     /* hover lift & shadow */
     @media (hover: hover) and (pointer: fine) {
