@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photos/";
           },
-        },{id: "post-star-battle-puzzle-game",
+        },{id: "post-from-horse-power-to-horsepower",
+      
+        title: "From horse power to horsepower",
+      
+      description: "Digital exhibit for 21A.500 · Technology and Culture—horse-drawn urban transportation as a system (mobility, stables, labor, decline, and mechanized replacement), with interactive sections and chronology.",
+      section: "Projects",
+      handler: () => {
+        
+          window.location.href = "/projects/horsepower";
+        
+      },
+    },{id: "post-star-battle-puzzle-game",
       
         title: "Star Battle Puzzle Game",
       

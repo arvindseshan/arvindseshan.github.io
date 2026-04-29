@@ -1,1 +1,1 @@
-User-agent: * Disallow: Sitemap: https://arvindseshan.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://arvind.seshan.org/sitemap.xml
