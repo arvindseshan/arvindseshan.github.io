@@ -103,6 +103,10 @@ jobs:
           else
             echo "projects/horsepower/_next missing; skip (exhibit not in this commit)"
           fi
+      # Without this, GitHub Pages runs Jekyll on the published branch and drops paths
+      # starting with `_` (e.g. `projects/horsepower/_next/`), so Next CSS/JS 404.
+      - name: Add .nojekyll for GitHub Pages
+        run: touch _site/.nojekyll
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss
