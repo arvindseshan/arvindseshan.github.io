@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "projects/**"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -34,6 +35,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "projects/**"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -90,6 +92,17 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
+      # Jekyll does not copy paths under `_next/` into _site even with `include`; copy after build.
+      - name: Copy Next.js exhibit assets into _site
+        run: |
+          if [ -d "projects/horsepower/_next" ]; then
+            mkdir -p _site/projects/horsepower
+            rm -rf _site/projects/horsepower/_next
+            cp -a projects/horsepower/_next _site/projects/horsepower/
+            echo "Copied projects/horsepower/_next -> _site/projects/horsepower/_next"
+          else
+            echo "projects/horsepower/_next missing; skip (exhibit not in this commit)"
+          fi
       - name: Purge unused CSS 🧹
         run: |
           npm install -g purgecss

@@ -182,8 +182,9 @@ kramdown:
 include:
   - _pages
   - _scripts
-  # Next.js export lives under projects/horsepower/; Jekyll skips paths with _ by default
-  - projects/horsepower/_next
+  # Next.js export: underscore paths are skipped by default; globs help local `jekyll build`.
+  # GitHub Actions deploy also runs an explicit `cp` of `_next` into `_site` after build.
+  - "projects/horsepower/_next/**"
 exclude:
   - bin/
   - CONTRIBUTING.md
