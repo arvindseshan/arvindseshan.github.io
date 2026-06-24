@@ -18,5 +18,5 @@ This work presents *IndoorMapper*, a budget-aware sensing framework for opportun
 Using real-world experiments and trace-driven simulation, we show that budget-aware sensing significantly improves map quality while operating within realistic energy constraints, approaching the performance of an oracle policy with perfect knowledge of future user movement.
 
 <div class="social">
-<a class="venobox" data-gall="myGallery2" href="../../../assets/img/indoormapper.png"><img src="../../../assets/img/indoormapper.png" /></a>
+<a class="venobox" data-gall="myGallery2" href="../../../assets/img/indoormapper.png"><img src="../../../assets/img/indoormappersmall.png" /></a>
 </div><br>
