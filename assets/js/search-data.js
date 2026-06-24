@@ -31,7 +31,18 @@ ninja.data = [{
       section: "Projects",
       handler: () => {
         
-          window.location.href = "/projects/indoormapper/";
+          window.location.href = "/projects/indoormapper-copy/";
+        
+      },
+    },{id: "post-blinc-a-fault-tolerant-neural-codec-for-wireless-real-time-video-streaming",
+      
+        title: "BLINC: A Fault-Tolerant Neural Codec for Wireless Real-time Video Streaming",
+      
+      description: "Wireless real-time video applications such as AR/VR, drones, cloud gaming, and broadcast streaming cannot always wait for retransmissions when packets are dropped or corrupted. In this project, we seek to understand whether a video codec preserve visual quality when wireless links deliver partially corrupted packets rather than only clean packets or full packet losses. We address this with BLINC, a bit-loss-insensitive neural codec that combines segmented entropy encoding, segment-wise loss-aware fine-tuning, and Wi-Fi link-layer integration to enable graceful degradation under bit-level corruption while reducing retransmissions and wireless airtime.",
+      section: "Projects",
+      handler: () => {
+        
+          window.location.href = "/projects/blinc/";
         
       },
     },{id: "post-star-battle-puzzle-game",
