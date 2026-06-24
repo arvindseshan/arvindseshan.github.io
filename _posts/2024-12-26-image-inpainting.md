@@ -6,7 +6,6 @@ description: Designed and implemented process for inpainting regions in images b
 tags: C/C++ visual-computing
 categories: class-projects
 thumbnail: assets/img/inpaintingbeach.png
-featured: true
 images:
   compare: true
   # slider: true
