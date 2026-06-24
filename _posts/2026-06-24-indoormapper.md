@@ -2,10 +2,10 @@
 layout: post
 title: Energy-Aware Camera Scheduling for Opportunistic 3D Mapping
 date: 2026-06-24 12:00:00
-description: For the final project in MIT’s Mobile and Sensor Computing class (6.1820), I built an <code>ARKit</code> + <code>Swift</code> iOS app that maps indoor environments by keeping the camera <strong>actually off</strong> between bursts. An adaptive policy opens short RGB capture windows only when inferred map utility (staleness / unseen coverage) warrants it; pose is propagated with IMU dead reckoning in between. We reconstruct sparse 3D structure from ARKit feature points and triangulated corner tracks, persist a global <code>ARWorldMap</code> for visual relocalization, and evaluate localization strategies (continuous VIO, periodic relocalization, distance-based relocalization, policy-aware bursts, IMU-only) against a continuous visual ground truth—with per-method power profiling via Xcode’s Power Profiler.
+description: Wearable devices operate under stringent energy constraints and cannot continuously capture video. This raises a fundamental systems question — given a limited sensing budget, when should a mobile device collect visual data to maximize the coverage and freshness of a continuously evolving 3D map? We address this with <code>IndoorMapper</code>, a budget-aware sensing framework for opportunistic 3D map maintenance that localizes users within an existing map, estimates the utility of potential observations, and dynamically allocates a user-specified sensing budget across a user’s trajectory.
 tags: Python visual-computing systems machine-learning robotics
 categories: class-projects
-thumbnail: assets/img/indoormapper.png
+thumbnail: assets/img/indoormappercover.png
 ---
 
 **Abstract**
