@@ -181,7 +181,7 @@ ninja.data = [{
       
         title: "LEGO Robotics Games and Other Projects",
       
-      description: "For the last seven years, I have been creating and sharing interactive LEGO robotics models. Many of these robots have been featured on LEGO and LEGO Education social media sites, and LEGO events such as LEGOWORLD Copenhagen.",
+      description: "For the last ten years, I have been creating and sharing interactive LEGO robotics models. Many of these robots have been featured on LEGO and LEGO Education social media sites, and LEGO events such as LEGOWORLD Copenhagen.",
       section: "Projects",
       handler: () => {
         
