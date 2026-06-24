@@ -23,7 +23,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photos/";
           },
-        },{id: "post-star-battle-puzzle-game",
+        },{id: "post-energy-aware-camera-scheduling-for-opportunistic-3d-mapping",
+      
+        title: "Energy-Aware Camera Scheduling for Opportunistic 3D Mapping",
+      
+      description: "For the final project in MIT’s Mobile and Sensor Computing class (6.1820), I built an ARKit + Swift iOS app that maps indoor environments by keeping the camera actually off between bursts. An adaptive policy opens short RGB capture windows only when inferred map utility (staleness / unseen coverage) warrants it; pose is propagated with IMU dead reckoning in between. We reconstruct sparse 3D structure from ARKit feature points and triangulated corner tracks, persist a global ARWorldMap for visual relocalization, and evaluate localization strategies (continuous VIO, periodic relocalization, distance-based relocalization, policy-aware bursts, IMU-only) against a continuous visual ground truth—with per-method power profiling via Xcode’s Power Profiler.",
+      section: "Projects",
+      handler: () => {
+        
+          window.location.href = "/projects/indoormapper/";
+        
+      },
+    },{id: "post-star-battle-puzzle-game",
       
         title: "Star Battle Puzzle Game",
       
