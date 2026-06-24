@@ -2,7 +2,7 @@
 layout: post
 title: LEGO Robotics Games and Other Projects
 date: 2024-12-17 11:40:00
-description: For the last seven years, I have been creating and sharing interactive LEGO robotics models. Many of these robots have been featured on LEGO and LEGO Education social media sites, and LEGO events such as LEGOWORLD Copenhagen.
+description: For the last ten years, I have been creating and sharing interactive LEGO robotics models. Many of these robots have been featured on LEGO and LEGO Education social media sites, and LEGO events such as LEGOWORLD Copenhagen. 
 tags: robotics
 categories:
 thumbnail: assets/img/firefly.JPG
@@ -10,7 +10,7 @@ images:
   venobox: true
 ---
 
-For the last seven years, I have been creating and sharing interactive LEGO robotics models. Many of these robots have been featured on LEGO and LEGO Education social media sites, and LEGO events such as LEGOWORLD Copenhagen.
+For the last ten years, I have been creating and sharing interactive LEGO robotics models. Many of these robots have been featured on LEGO and LEGO Education social media sites, and LEGO events such as LEGOWORLD Copenhagen. 
 
 Many of my designs are based on parts from just one kit to ensure that others can build them. Tic-Tac-Toe and Rock-Paper-Scissors are two fun games I created where a human player plays against the LEGO robot. 
 
