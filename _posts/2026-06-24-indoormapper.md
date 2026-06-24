@@ -6,6 +6,7 @@ description: Wearable devices operate under stringent energy constraints and can
 tags: Python visual-computing systems machine-learning robotics
 categories: class-projects
 thumbnail: assets/img/indoormappercover.png
+featured: true
 ---
 
 **Abstract**
